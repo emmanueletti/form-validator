@@ -18,32 +18,61 @@
         <!-- Full Name -->
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" placeholder="Full Name" id="name" />
+          <input
+            required
+            minlength="3"
+            maxlength="100"
+            type="text"
+            placeholder="Full Name"
+            id="name"
+          />
         </div>
         <!-- Phone Number -->
         <div class="form-group">
           <label for="phone">Phone Numer</label>
-          <input type="tel" placeholder="555-555-5555" id="phone" />
+          <input
+            required
+            type="tel"
+            placeholder="555-555-5555"
+            id="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          />
         </div>
         <!-- Email -->
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" placeholder="email@address.com" id="email" />
+          <input
+            required
+            type="email"
+            placeholder="email@address.com"
+            id="email"
+          />
         </div>
         <!-- Website URL -->
         <div class="form-group">
           <label for="website">Website URL</label>
-          <input type="url" placeholder="http://website.com" id="website" />
+          <input
+            required
+            type="url"
+            placeholder="http://website.com"
+            id="website"
+          />
         </div>
         <!-- Password -->
         <div class="form-group">
           <label for="password1">Password</label>
-          <input type="password" placeholder="Create Password" id="password1" />
+          <input
+            required
+            type="password"
+            placeholder="Create Password"
+            id="password1"
+          />
         </div>
         <!-- Confirm Password -->
         <div class="form-group">
           <label for="password2">Confirm Password</label>
           <input
+            required
             type="password"
             placeholder="Confirm Password"
             id="password2"
